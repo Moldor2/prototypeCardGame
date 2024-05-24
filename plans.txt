@@ -1,0 +1,41 @@
+Scalability and Flexibility
+----------------NODES---------------------
+	startCombat()
+		turn management
+		win/lose conditions
+		node called at start of combat
+	player()
+		display stats
+		animations for player effects like mana gain and damage
+	UI()
+		cards
+		tooltips
+		mana
+----------------Handlers---------------------
+	EnemyHandler
+		enemy turn management (possible use case for a basic machine learning script)
+		enemy actions
+		etc.
+	PlayerHandler
+		player turns
+		draw/discard cards
+		
+
+Data Handling
+	Class Card
+		name
+		mana cost
+		effect class
+	Class Effect
+		do something to target entity
+		either do damage or shield or apply special effects
+	Class CardPile
+		dynamic array of cards
+		draw pile, discard pile, exile pile
+	Class Stats
+		keeps track of health, mana, shield, and any special effects
+		handles actions
+	Class Intent
+		for choosing enemy action
+		what icon to display
+		what text to display
